@@ -56,13 +56,13 @@ Number=11.11
 
 ---
 
-1. Цикл `for`: Метод выбирается на основе фактического типа переменной `n`:
-   - `new Integer(1)` → `printNum(Integer i)`
+1. Цикл `for`: Метод выбирается на основе типа переменной `n`:
+   - `new Integer(1)` → `printNum(Number n)`
    - `11` → `printNum(Number n)`
-   - `1.11f` → `printNum(Float f)`
+   - `1.11f` → `printNum(Number n)`
    - `11.11` → `printNum(Number n)`
 
-2. Вызовы (2): Метод выбирается на основе статического типа аргументов:
+2. Вызовы (2): Метод выбирается на основе фактического типа аргументов:
    - `new Integer(1)` → `printNum(Integer i)`
    - `11` → `printNum(int i)`
    - `1.11f` → `printNum(Float f)`
